@@ -2,42 +2,100 @@
 		<head>
 			<Title> The Ultimate Helder's Articles Simulator </title>
 			<link rel="stylesheet" type="text/css" href="interface.css">
+			<style> table, th, td { 
+			border: 1px ridge black;
+			} 
+			div {
+			background-color: lightgrey;
+			width: 300px;
+			border: 5px solid black;
+			padding: 25px;
+			margin: 25px;
+			}			
+			.center {
+			margin: auto;
+			width: 40%;
+			border: 1px solid #73AD21;
+			padding: 5px;
+}
+			</style>
 			
 		</head>
 		
 		<body>
-			
-			<button onclick="cookieClick(1)"> Gerar Nova Palavra <br> +1 </button>
-			<button onclick="cookieClick2(1)"> Gerar Nova Pagina <br> +1 (20p) </button>
-
-			<br>
-			<br>
-			
-			<button onclick="buyCursor1()"> Contratar Bolsista Graduando <br> (<span id="cursorCost1"> 10 </span> p) </button>
-			<button onclick="buyCursor2()"> Contratar Bolsista Mestrado <br> (<span id="cursorCost2"> 15 </span> p) </button>
+			<p><center> <b> HELDER SIMULATOR </b> </p></center>
 		
-			<br>
-			<br>
-			
-			<button onclick="buycafe()"> Comprar cafe <br> Produtividade (+10%) <br> </button>
-		
-			<p> Palavras: <span id="cookies">0</span> 
-			<p> Paginas: <span id="cookies2">0</span> 
-		
-			<p> Voce tem <span id="cursorsv"> 0 </span> bolsistas que escrevem
-			<span id="cursors"> 0 </span> palavras/segundo.
-				
-			<p> Graduacao: <span id="cursors1"> 0 </span> 
-			<p> Mestrado : <span id="cursors2"> 0 </span> 
-			
-			<br>
-			<p>	Xicaras de Cafe : <span id="cafe"> 0 </span>
-			<p>	Custo do Cafe : <span id="costCafe"> 10 </span> paginas
-					
-		
-			
+			<div><center> <button onclick="cookieClick(1)"> Gerar Nova Palavra <br> +1 </button> </center>
+			<center> <button onclick="cookieClick2(1)"> Gerar Nova Pagina <br> +1 (20p) </button> </center>
+			</div>
+			<div>
+			<center> <button onclick="buyCursor1()"> Contratar Bolsista Graduando <br> (<span id="cursorCost1"> 10 </span> p) </button> </center>
+			<center> <button onclick="buyCursor2()"> Contratar Bolsista Mestrado <br> (<span id="cursorCost2"> 15 </span> p) </button> </center>
+			</div>
+			<div>
+			<button onclick="buycafe()"> Comprar Cafe <br> Produtividade (+10%) <br> </button>
+						<p>	Custo do Cafe : <span id="costCafe"> 10 </span> paginas	
+			</div>
+			<center><p> -------------------------------------------------------------------------------- </p>
+			<p> <b> INDICADORES DE PRODUTIVIDADE </p></b></center>
+			<table style="width:100%">
+  <tr><center>
+    <th>Paginas</th>
+    <th>Artigos em congresso</th> 
+    <th>Artigos em Qualis C</th>
+	<th>Artigos em Qualis B</th>
+	<th>Artigos em Qualis A2</th>
+	<th>Artigos em Qualis A1</th>
+  </tr>
+  <tr>
+    <td> <span id="cookies">0</span> </td>
+    <td> <span id="cookies2">0</span> </td> 
+    <td>0</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+  </tr>
+</table></center>
+			<p><b><center> BOLSISTAS </p></b></center>		
+			<p> Voce tem <span id="cursorsv"> 0 </span> bolsistas que escrevem <span id="cursors"> 0 </span> palavras/segundo.
+			<table style="width:100%">
+  <tr><center>
+    <th>Graduacao</th>
+    <th>Mestrado</th> 
+    <th>Doutorado</th>
+	<th>Pesquisador</th>
+	<th>Professor</th>
+	<th>Clone do Helder</th>
+  </tr>
+  <tr>
+    <td> <span id="cursors1"> 0 </span>  </td>
+    <td> <span id="cursors2"> 0 </span>  </td> 
+    <td>0</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+  </tr>
+</table></center>	
+			<p><b><center> AMPLIFICADORES </p></b></center>
+			<table style="width:100%">
+  <tr><center>
+    <th>Xicaras de Cafe</th>
+    <th>Energetico</th> 
+    <th>Autocitar </th>
+	<th>Financiamento do CNPQ </th>
+	<th>Simao <b>Booster</b></th>
+	<th>Premio Nobel em Economia</th>
+  </tr>
+  <tr>
+    <td>0</td> 
+    <td>0</td> 
+    <td>0</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+  </tr>
+</table></center>
 			<script type="text/javascript" src="main.js"> </script>
 		</body>
 
-	</html>
-			
+	</html>	
