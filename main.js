@@ -32,7 +32,8 @@ function buycafe(){
 	var nextCostCafe = Math.floor(10*Math.pow(1.5, cafe));
 	document.getElementById('cafe').innerHTML = cafe;
 	document.getElementById('costCafe').innerHTML = nextCostCafe;
-	document.getElementById('cookies').innerHTML = cookies;
+	document.getElementById('cookies2').innerHTML = cookies2;
+	document.getElementById('cursors').innerHTML = cursors*1.1;
 	
 };
 
