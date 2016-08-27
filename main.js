@@ -27,7 +27,7 @@ function buyCursor1(){
 	if (cookies >= cursorCost1) {
 		cursors = cursors + 1;
 		cursors1 = cursors1 + 1;
-		cursorsv = cursorsv + cursors1;
+		cursorsv = cursorsv + 1;
 		cookies = cookies - cursorCost1;
 		document.getElementById('cursors').innerHTML = cursors;
 		document.getElementById('cursors1').innerHTML = cursors1;
@@ -45,7 +45,7 @@ function buyCursor2(){
 	if (cookies >= cursorCost2) {
 		cursors = cursors + 3;
 		cursors2 = cursors2 + 1;
-		cursorsv = cursorsv + cursors2;
+		cursorsv = cursorsv + 1;
 		cookies = cookies - cursorCost2;
 		document.getElementById('cursors').innerHTML = cursors;
 		document.getElementById('cursors2').innerHTML = cursors2;
