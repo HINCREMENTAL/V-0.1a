@@ -1,8 +1,20 @@
 var cookies = 0;
+var cookies2 = 0;
 
 function cookieClick(number) {
 	cookies = cookies + number;
 	document.getElementById("cookies").innerHTML = cookies;
+};
+
+function cookieClick2(number2) {
+	var cookie2cost = 20
+	if (cookies >= cookie2cost){
+	cookies2 = cookies2 + number2;
+	cookies = cookies - cookie2cost;
+	document.getElementById("cookies2").innerHTML = cookies2;
+	};
+
+
 };
 
 var cursors = 0
