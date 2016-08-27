@@ -27,7 +27,7 @@ function buycafe(){
 	var costCafe = Math.floor(10*Math.pow(1.5, cafe));
 	if (cookies2 >= costCafe){
 		cafe = cafe + 1;
-		cookies = cookies - costCafe;
+		cookies2 = cookies2 - costCafe;
 	};
 	var nextCostCafe = Math.floor(10*Math.pow(1.5, cafe));
 	document.getElementById('cafe').innerHTML = cafe;
