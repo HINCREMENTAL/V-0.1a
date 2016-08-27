@@ -1,20 +1,29 @@
-<html lang="pt-BR">
-	<head><center>
-		<Title> The Ultimate Helder's Articles Simulator </title>
-		<link rel="stylesheet" type="text/css" href="interface.css">
-		
-	</center></head>
-	
-	<body>
+	<html lang="pt">
+		<head>
+			<Title> The Ultimate Helder's Articles Simulator </title>
+			<link rel="stylesheet" type="text/css" href="interface.css">
 			
-		<button onclick="cookieClick(1)"> Gerar Artigo </button>
-		<button onclick="buyCursor()"> Contratar Bolsista </button>
-		<p> Artigos: <span id="cookies">0</span> 
-		<p> Custo: <span id="cursorCost"> 10 </span>
-
+		</head>
 		
-		<script type="text/javascript" src="main.js"> </script>
-	</body>
+		<body>
+			
+			<button onclick="cookieClick(1)"> Gerar Nova Palavra <br> +1 </button>
+			<button onclick="buyCursor1()"> Contratar Bolsista Graduando <br> (<span id="cursorCost1"> 10 </span> p) </button>
+			<button onclick="buyCursor2()"> Contratar Bolsista Mestrado <br> (<span id="cursorCost2"> 15 </span> p) </button>
+			<p> Palavras: <span id="cookies">0</span> 
+			
 
-</html>
+				
+			<p> Voce tem <span id="cursorsv"> 0 </span> bolsistas que escrevem
+				<span id="cursors"> 0 </span> palavras/segundo.
+				
+			<p> Graduacao: <span id="cursors1"> 0 </span> 
+			<p>	Mestrado : <span id="cursors2"> 0 </span> 
+					
 		
+			
+			<script type="text/javascript" src="main.js"> </script>
+		</body>
+
+	</html>
+			
