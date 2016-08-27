@@ -6,21 +6,46 @@ function cookieClick(number) {
 };
 
 var cursors = 0
+var cursors1 = 0
+var cursors2 = 0
+var cursorsv = 0
 
-function buyCursor(){
-	var cursorCost = Math.floor(10*Math.pow(1.1, cursors));
-	if (cookies >= cursorCost) {
+function buyCursor1(){
+	var cursorCost1 = Math.floor(10*Math.pow(1.1, cursors));
+	if (cookies >= cursorCost1) {
 		cursors = cursors + 1;
-		cookies = cookies - cursorCost;
+		cursors1 = cursors1 + 1;
+		cursorsv = cursorsv + cursors1;
+		cookies = cookies - cursorCost1;
 		document.getElementById('cursors').innerHTML = cursors;
+		document.getElementById('cursors1').innerHTML = cursors1;
+		document.getElementById('cursorsv').innerHTML = cursorsv;
 		document.getElementById('cookies').innerHTML = cookies;
 	}
-	
 
-	var nextCost = Math.floor(10 * Math.pow(1.1,cursors));
+	var nextCost1 = Math.floor(10 * Math.pow(1.1, cursors1));
 	document.getElementById('cursorCost').innerHTML = nextCost;
 
 };
+
+function buyCursor2(){
+	var cursorCost2 = Math.floor(15*Math.pow(1.1, cursors2));
+	if (cookies >= cursorCost2) {
+		cursors = cursors + 3;
+		cursors2 = cursors2 + 1;
+		cursorsv = cursorsv + cursors2;
+		cookies = cookies - cursorCost2;
+		document.getElementById('cursors').innerHTML = cursors;
+		document.getElementById('cursors2').innerHTML = cursors2;
+		document.getElementById('cursorsv').innerHTML = cursorsv;
+		document.getElementById('cookies').innerHTML = cookies;
+	}
+
+	var nextCost2 = Math.floor(10 * Math.pow(1.1,cursors));
+	document.getElementById('cursorCost').innerHTML = nextCost;
+
+};
+
 
 window.setInterval(function(){
 	
