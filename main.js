@@ -11,7 +11,7 @@ var cursors2 = 0
 var cursorsv = 0
 
 function buyCursor1(){
-	var cursorCost1 = Math.floor(10*Math.pow(1.1, cursors));
+	var cursorCost1 = Math.floor(10*Math.pow(1.1, cursors1));
 	if (cookies >= cursorCost1) {
 		cursors = cursors + 1;
 		cursors1 = cursors1 + 1;
@@ -24,7 +24,7 @@ function buyCursor1(){
 	}
 
 	var nextCost1 = Math.floor(10 * Math.pow(1.1, cursors1));
-	document.getElementById('cursorCost').innerHTML = nextCost;
+	document.getElementById('cursorCost1').innerHTML = nextCost1;
 
 };
 
@@ -41,8 +41,8 @@ function buyCursor2(){
 		document.getElementById('cookies').innerHTML = cookies;
 	}
 
-	var nextCost2 = Math.floor(10 * Math.pow(1.1,cursors));
-	document.getElementById('cursorCost').innerHTML = nextCost;
+	var nextCost2 = Math.floor(15 * Math.pow(1.1,cursors2));
+	document.getElementById('cursorCost2').innerHTML = nextCost2;
 
 };
 
