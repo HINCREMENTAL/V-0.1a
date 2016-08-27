@@ -17,18 +17,32 @@ function cookieClick2(number2) {
 
 };
 
-var cursors = 0
-var cursors1 = 0
-var cursors2 = 0
-var cursorsv = 0
+var cursors = 0;
+var cursors1 = 0;
+var cursors2 = 0;
+var cursorsv = 0;
+var cafe = 0;
+
+function buycafe(){
+	var costCafe = Math.floor(10*Math.pow(1.5, cafe));
+	if (cookies2 >= costCafe){
+		cafe = cafe + 1;
+		cookies = cookies - costCafe;
+	};
+	var nextCostCafe = Math.floor(10*Math.pow(1.5, cafe));
+	document.getElementById('cafe').innerHTML = cafe;
+	document.getElementById('costCafe').innerHTML = nextCostCafe;
+	document.getElementById('cookies').innerHTML = cookies;
+	
+};
 
 function buyCursor1(){
 	var cursorCost1 = Math.floor(10*Math.pow(1.1, cursors1));
 	if (cookies >= cursorCost1) {
-		cursors = cursors + 1;
+		cursors = Math.round(100*(cursors + 1)*Math.pow(1.1,cafe))/100;
 		cursors1 = cursors1 + 1;
 		cursorsv = cursorsv + 1;
-		cookies = cookies - cursorCost1;
+		cookies = Math.floor(cookies - cursorCost1);
 		document.getElementById('cursors').innerHTML = cursors;
 		document.getElementById('cursors1').innerHTML = cursors1;
 		document.getElementById('cursorsv').innerHTML = cursorsv;
@@ -43,10 +57,10 @@ function buyCursor1(){
 function buyCursor2(){
 	var cursorCost2 = Math.floor(15*Math.pow(1.1, cursors2));
 	if (cookies >= cursorCost2) {
-		cursors = cursors + 3;
+		cursors = Math.round(100*(cursors + 3)*Math.pow(1.1,cafe))/100;
 		cursors2 = cursors2 + 1;
 		cursorsv = cursorsv + 1;
-		cookies = cookies - cursorCost2;
+		cookies = Math.floor(cookies - cursorCost2);
 		document.getElementById('cursors').innerHTML = cursors;
 		document.getElementById('cursors2').innerHTML = cursors2;
 		document.getElementById('cursorsv').innerHTML = cursorsv;
